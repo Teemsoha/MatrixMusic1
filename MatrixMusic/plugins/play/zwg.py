@@ -58,7 +58,7 @@ async def idljjopen(client:Client, message:Message):
     else:
         return await message.reply_text(f"** {message.from_user.mention} تۆ ئەدمین نیت لێرە💔•**")
 ##|𓆩˹𓏺َِ 𓏺𝙒𝙃𝙄𝙎𝙆𓏺𝞝𝙔 ٍٍٍٍٍٍّّّّّّّ『مـبـ ـࢪمـج ⏎』🇸🇦 ☬, [23/12/44 03:32 ص]  
-@app.on_message(command(['ز','زوجني']))
+@app.on_message(command(['الغيتينيزية','تتااهتااا']))
 def iddd(client:Client, message:Message):
     chat_id = message.chat.id
     if chat_id in iddof:
