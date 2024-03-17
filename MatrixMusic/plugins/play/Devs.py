@@ -33,7 +33,7 @@ def get_file_id(msg: Message):
                 return obj
 
 @app.on_message(
-    command(["المطور","اسحاق","اليسع","مطور السورس","مبرمج السورس"])
+    command(["نادي المطور ا","اسحاق","اليسع","مطور السورس","مبرمج السورس"])
     & filters.group
   
 )
