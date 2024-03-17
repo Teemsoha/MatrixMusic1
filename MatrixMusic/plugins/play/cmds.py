@@ -10,7 +10,7 @@ from MatrixMusic import app
 from config import OWNER_ID, LOGGER_ID
 
 
-@app.on_message(command(["ميوزك", "اوامر", "الاوامر"]))
+@app.on_message(command(["ميوزك", "تفعيل الاغاني", "الميوزك"]))
 async def zdatsr(client: Client, message: Message):
     usr = await client.get_users(OWNER_ID)
     name = usr.first_name
