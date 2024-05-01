@@ -4,5 +4,5 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
-RUN RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 CMD bash start
