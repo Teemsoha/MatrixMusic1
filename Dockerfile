@@ -3,6 +3,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-WORKDIR /app
+WORKDIR /app/
 RUN pip install -r requirements.txt
 CMD bash start
