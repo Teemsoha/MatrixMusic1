@@ -5,7 +5,7 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app/
-
+COPY . /app/
 
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
