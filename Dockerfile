@@ -8,4 +8,5 @@ WORKDIR /app/
 COPY . /app/
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-CMD ["python", "MatrixMusic"]
+WORKDIR /app/MatrixMusic
+CMD ["python", "__main__.py"]
