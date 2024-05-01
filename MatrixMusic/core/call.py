@@ -11,7 +11,7 @@ from pytgcalls.exceptions import (
     
 )
 from pytgcalls.types import Update
-from pytgcalls.types.stream.quality import HighQualityAudio, MediumQualityVideo
+from pytgcalls.types.stream import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
