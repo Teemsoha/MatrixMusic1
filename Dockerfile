@@ -4,7 +4,11 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app/
+WORKDIR /app
 
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+# Copy the application files into the working directory
+COPY . /app
+
+# Install the application dependencies
+RUN pip install -r requirements.txt
 CMD bash start
