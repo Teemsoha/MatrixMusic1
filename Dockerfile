@@ -12,5 +12,5 @@ COPY . /app
 
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-WORKDIR /app/MatrixMusic/
-CMD ["python", "__init__.py"]
+WORKDIR /app
+CMD ["python", "starrt.py"]
