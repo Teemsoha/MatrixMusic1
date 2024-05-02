@@ -1,7 +1,7 @@
 from MatrixMusic.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
-from unidecode import unidecode
+
 
 from MatrixMusic import app
 from MatrixMusic.misc import SUDOERS
