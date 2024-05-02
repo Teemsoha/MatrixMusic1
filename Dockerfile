@@ -1,18 +1,12 @@
 FROM python:3.11-buster
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
 
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
 
-
-WORKDIR /app/
-
-COPY . /app/
-
-RUN pip3 install --no-cache-dir --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-
-
-
-CMD bash start
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /MatrixMusic1
+WORKDIR /MatrixMusic1
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
