@@ -14,9 +14,7 @@ from ntgcalls import TelegramServerError
 from pytgcalls import PyTgCalls
 from pytgcalls.exceptions import (AlreadyJoinedError,
                                   NoActiveGroupCall)
-from pytgcalls.types import (JoinedGroupCallParticipant, 
-                             MediaStream,
-                             LeftGroupCallParticipant, Update)
+
 from pytgcalls.types.stream import StreamAudioEnded
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
