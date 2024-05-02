@@ -5,13 +5,19 @@ from typing import Union
 
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
-from pytgcalls import PyTgCalls, StreamType
-from pytgcalls.exceptions import (
-    AlreadyJoinedError,
-    NoActiveGroupCall,
-    TelegramServerError,
-)
-from pytgcalls.types import Update
+from pyrogram.enums import ChatMemberStatus
+from pyrogram.errors import (ChatAdminRequired,
+                             UserAlreadyParticipant,
+                             UserNotParticipant)
+from pyrogram.types import InlineKeyboardMarkup
+from ntgcalls import TelegramServerError
+from pytgcalls import PyTgCalls
+from pytgcalls.exceptions import (AlreadyJoinedError,
+                                  NoActiveGroupCall)
+from pytgcalls.types import (JoinedGroupCallParticipant, 
+                             MediaStream,
+                             LeftGroupCallParticipant, Update)
+from pytgcalls.types.stream import StreamAudioEnded
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
