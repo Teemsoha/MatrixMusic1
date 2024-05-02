@@ -12,7 +12,7 @@ motor
 pillow
 psutil
 pykeyboard
-py-tgcalls
+py-tgcalls==0.9.7
 pyrogram==2.0.106
 python-dotenv
 pyyaml
