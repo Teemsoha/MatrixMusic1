@@ -1,1 +1,1 @@
- web : bash MatrixMusic
+ worker: python3 MatrixMusic
